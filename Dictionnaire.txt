@@ -1,0 +1,14 @@
+bonjour *|Bonjour ! Quel est votre nom ?/Bonjour! Comment allez-vous ?/Bonjour ou bonsoir ?/Bonjour ! Quel temps fait-il aujourd'hui ?
+hello *|Bonjour ! Quel est votre nom ?/Bonjour! Comment allez-vous ?
+salut *|Bonjour ! Quel est votre nom ?/Bonjour! Comment allez-vous ?
+bonsoir *|Bonsoir ! Coment allez-vous ?/Bonsoir ! Avez-vous passé une bonne journée ?/Qu'avez vous fait aujourd'hui ?
+* au revoir *|Au revoir !/A bientôt !/Je suis content d'avoir parlé avec vous.
+* stop *| On passe au sérieux
+* age de Sonia *|req1
+* symptômes de Sonia *|req2
+* Sonia * infecte *|req3
+*  liste symptômes *|req4
+* examens cliniques *|req5 
+* patiente Sonia *|req6 
+* ?|Vous avez demandé à vos amis, à votre famille ?/C'est une question intéressante...
+*|Je vois.../Je comprends.../Hum.../J'aime beaucoup parler avec vous.../Pourquoi dites-vous cela ?/Qu'est-ce qui vous fait dire ça ?/Revenons à vous.../Je crois que j'ai entendu parler de ça quelque part.../Dites m'en un peu plus...

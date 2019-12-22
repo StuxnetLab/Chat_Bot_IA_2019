@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo_zx50/ontologies/2019/11/untitled-ontology-19"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo_zx50/ontologies/2019/11/untitled-ontology-19">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo_zx50/ontologies/2019/11/untitled-ontology-19#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnostics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Examen_mamographie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ganglion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Historiques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metastases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation_Clinique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation_Radiologique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patients"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommandations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptômes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TNM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tumeur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diagnostic_bénigne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diagnostic_maligne"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age_menopause"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasdescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isa_alcool"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isa_tabac"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#listsymp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CL_ID_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CL_ID_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ID1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ID2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sonia"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Diagnostics"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Examen_mamographie"/>
+        <Class IRI="#Observation_Radiologique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ganglion"/>
+        <Class IRI="#TNM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grade"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Historiques"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metastases"/>
+        <Class IRI="#TNM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommandations"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stade"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TNM"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tumeur"/>
+        <Class IRI="#TNM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diagnostic_bénigne"/>
+        <Class IRI="#Diagnostics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diagnostic_maligne"/>
+        <Class IRI="#Diagnostics"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Diagnostics"/>
+        <Class IRI="#Symptômes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ganglion"/>
+        <Class IRI="#Metastases"/>
+        <Class IRI="#Tumeur"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation_Clinique"/>
+        <Class IRI="#Observation_Radiologique"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Observation_Clinique"/>
+        <NamedIndividual IRI="#CL_ID_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation_Clinique"/>
+        <NamedIndividual IRI="#CL_ID_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptômes"/>
+        <NamedIndividual IRI="#ID1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptômes"/>
+        <NamedIndividual IRI="#ID2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#Sonia"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isa"/>
+        <NamedIndividual IRI="#CL_ID_1"/>
+        <Literal>La taille de la tumeur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isa"/>
+        <NamedIndividual IRI="#CL_ID_2"/>
+        <Literal>L’aspect de la peau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#listsymp"/>
+        <NamedIndividual IRI="#ID1"/>
+        <Literal>faiblesse musculaire</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#listsymp"/>
+        <NamedIndividual IRI="#ID2"/>
+        <Literal>maux de tête</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#Sonia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasname"/>
+        <NamedIndividual IRI="#Sonia"/>
+        <Literal>Sonia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isa_alcool"/>
+        <NamedIndividual IRI="#Sonia"/>
+        <Literal>Yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isa_tabac"/>
+        <NamedIndividual IRI="#Sonia"/>
+        <Literal>No</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#age_menopause"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasage"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasdescription"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasname"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isa"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isa_alcool"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isa_tabac"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#listsymp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#listsymp"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age_menopause"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasage"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasdescription"/>
+        <Class IRI="#Symptômes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasname"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isa"/>
+        <Class IRI="#Observation_Clinique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isa_alcool"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isa_tabac"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#listsymp"/>
+        <Class IRI="#Symptômes"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age_menopause"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasage"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasdescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isa_alcool"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isa_tabac"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#listsymp"/>
+        <Datatype abbreviatedIRI="rdf:XMLLiteral"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

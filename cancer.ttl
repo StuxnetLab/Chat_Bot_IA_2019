@@ -1,0 +1,42 @@
+@prefix : <http://example.org/> .
+@prefix ns:   <http://xmlns.com/cancer/0.1/> .
+
+:Sonia
+    
+    ns:hasname   "Sonia" ;
+    ns:symp   "[faiblesse musculaire, maux de tête]"; 
+	ns:hasage     "40" ;
+	ns:diag    "[infection bénigne depuis 2 ans]" ;
+	ns:isa_tabac "[No]";
+	.
+:ID1
+ns:type "Symptômes_ID1";
+ns:listsymp "[maux de tête]";
+.
+:ID2
+ns:type "Symptômes_ID2";
+ns:listsymp "[faiblesse musculaire]";
+.
+:ID3
+ns:type "Symptômes_ID3";
+ns:listsymp "[essoufflement]";
+.
+:ID3
+ns:type "Symptômes_ID3";
+ns:listsymp "[douleur osseuse]";
+.
+:ID4
+ns:type "Symptômes_ID4";
+ns:listsymp "[perte d’appétit]";
+.
+:CL_ID_1
+ns:type "EX_CL";
+ns:isa "[La taille de la tumeur]";
+.
+:CL_ID_2
+ns:type "EX_CL";
+ns:isa "[L’aspect de la peau]";
+.
+:CL_ID_2
+ns:type "EX_CL";
+ns:isa "[La forme du mamelon et de l’aréole]";
